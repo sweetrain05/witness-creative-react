@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": "../../../witness-creative-website"
+		},
+		{
+			"path": "../.."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "witness-creative-website"
+    }
+}
