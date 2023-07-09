@@ -4,7 +4,8 @@ import companyLogo from "../assets/svg/witnessLogo.svg";
 import menuBar from "../assets/svg/menubar.svg";
 import { useState, useEffect } from "react";
 import MenuList from "./MenuList";
-import ExternalLinks from "./ExternalLinks";
+
+import MenuOverlay from "./MenuOverlay";
 
 export default function Header() {
     // state
@@ -30,6 +31,7 @@ export default function Header() {
 
     const handleMenuClick = () => {
         setMenuToggle(!menuToggle);
+        console.log(menuToggle);
     };
 
     return (
@@ -41,20 +43,7 @@ export default function Header() {
                 <ul className="header_rightside">
                     {screenWidth < 767 ? (
                         menuToggle ? (
-                            <div className="menu_container_overlay">
-                                <button
-                                    className="menu_btn_close"
-                                    onClick={handleMenuClick}
-                                >
-                                    ×
-                                </button>
-                                <ul className="menu_list">
-                                    <MenuList />
-                                </ul>
-                                <ul className="menu_externalLinks">
-                                    <ExternalLinks />
-                                </ul>
-                            </div>
+                            <MenuOverlay handleMenuClick={handleMenuClick} />
                         ) : (
                             <div
                                 className="hamburger-menu"

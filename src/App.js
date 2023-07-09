@@ -7,7 +7,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 const PageNotFound = () => {
-    return <div>404 | Page not found</div>;
+    return (
+        <p style={{ margin: "200px", textAlign: "center" }}>
+            404 | Page not found
+        </p>
+    );
 };
 
 export default function App() {

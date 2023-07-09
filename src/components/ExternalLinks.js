@@ -18,21 +18,19 @@ export default function ExternalLinks() {
 
     return (
         <>
-            <div>
-                {links.map((link, i) => (
-                    <NavLink
-                        key={i}
-                        className="nav-link"
-                        aria-current="page"
-                        target="_blank"
-                        to={link.url}
-                    >
-                        <li className="links">
-                            <i className={`fa-brands fa-${link.name}`} />
-                        </li>
-                    </NavLink>
-                ))}
-            </div>
+            {links.map((link, i) => (
+                <NavLink
+                    key={i}
+                    className="nav-link"
+                    aria-current="page"
+                    target="_blank"
+                    to={link.url}
+                >
+                    <li className="links">
+                        <i className={`fa-brands fa-${link.name}`} />
+                    </li>
+                </NavLink>
+            ))}
         </>
     );
 }
