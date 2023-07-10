@@ -1,44 +1,75 @@
 import { NavLink } from "react-router-dom";
 import PartnersCarousel from "../components/PartnersCarousel";
 import SubscriptionForm from "../components/SubscriptionForm";
+import { motion } from "framer-motion";
 
 const images = require.context("../assets/img", false, /\.(jpg|jpeg|png)$/);
 const imageFiles = images.keys().map(images);
 
 export default function Home() {
+    const ascend = {
+        offscreen: {
+            y: 20,
+            opacity: 0,
+        },
+        onscreen: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.5,
+            },
+        },
+    };
+
     return (
         <article className="page home">
             <section className="intro">
-                <p className="intro_statement animate fadeIn-ascend">
-                    We connect great minds so that dreams become reality.
-                </p>
-                <NavLink className="nav-link" aria-current="page" to="/contact">
-                    <button className="intro_btn_contact goToContact">
-                        ⇀ contact us
-                    </button>
-                </NavLink>
-                <div className="intro_img_container">
-                    <img
-                        className="animate fadeIn-ascend-s1"
-                        src={imageFiles[5]}
-                        alt="meeting"
-                    />
-                    <img
-                        className="animate fadeIn-ascend-s1"
-                        src={imageFiles[6]}
-                        alt="office"
-                    />
-                    <svg
-                        className="animate fadeIn-ascend-s2"
-                        width={130}
-                        height={130}
-                        viewBox="0 0 130 130"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                <motion.div
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    // viewport={{ once: true, amount: 0.8 }}
+                >
+                    <motion.p
+                        variants={ascend}
+                        className="intro_statement animate fadeIn-ascend"
                     >
-                        <circle cx={65} cy={65} r={65} fill="#FF6565" />
-                    </svg>
-                </div>
+                        We connect great minds so that dreams become reality.
+                    </motion.p>
+
+                    <NavLink
+                        className="nav-link"
+                        aria-current="page"
+                        to="/contact"
+                    >
+                        <button className="intro_btn_contact goToContact">
+                            ⇀ contact us
+                        </button>
+                    </NavLink>
+                    <div className="intro_img_container">
+                        <motion.img
+                            variants={ascend}
+                            className="animate fadeIn-ascend-s1"
+                            src={imageFiles[5]}
+                            alt="meeting"
+                        />
+                        <motion.img
+                            variants={ascend}
+                            className="animate fadeIn-ascend-s1"
+                            src={imageFiles[6]}
+                            alt="office"
+                        />
+                        <svg
+                            className="animate fadeIn-ascend-s2"
+                            width={130}
+                            height={130}
+                            viewBox="0 0 130 130"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx={65} cy={65} r={65} fill="#FF6565" />
+                        </svg>
+                    </div>
+                </motion.div>
             </section>
             <section className="what-we-do">
                 <p className="what-we-do_title animate fadeIn-ascend">

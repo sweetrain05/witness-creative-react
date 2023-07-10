@@ -197,10 +197,9 @@ body.hide-scrollbar::-webkit-scrollbar-thumb {
                 .menu_list {
                     justify-content: center;
                     align-items: center;
-                    font-size: $mobile-font-large;
+                    //font-size: $mobile-font-large;
 
-                    color: $color-navy;
-                    text-transform: uppercase;
+                    //text-transform: uppercase;
                     text-align: center;
 
                     li {
@@ -209,6 +208,7 @@ body.hide-scrollbar::-webkit-scrollbar-thumb {
                         margin-bottom: 7vh;
                         transition: 0.5s ease;
                         cursor: pointer;
+                        color: $color-navy;
                         font-size: $mobile-font-large;
 
                         &:hover {
