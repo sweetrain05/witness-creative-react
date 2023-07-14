@@ -5,7 +5,7 @@ import aboutUsImage2 from "../../assets/img/aboutUsImage2.jpg";
 function WhatWeDo2({ toRight, toLeft }) {
     return (
         <article className="what-we-do_2">
-            <motion.div variants={toRight}>
+            <motion.div variants={toLeft}>
                 <h3>Capital raising advisory consulting</h3>
                 <p>
                     The symbiotic relationship between capital raising and
@@ -19,7 +19,7 @@ function WhatWeDo2({ toRight, toLeft }) {
                 </p>
             </motion.div>
             <motion.img
-                variants={toLeft}
+                variants={toRight}
                 src={aboutUsImage2}
                 alt="active discussion"
             />

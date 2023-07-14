@@ -1,11 +1,22 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import motionWrapper from "../wrapper/motionWrapper";
+import NewsCard from "../components/NewsCard";
+import axios from "axios";
 
 function News({ ascend }) {
     useEffect(() => {
         window.scrollTo(0, 0);
+        loadNews();
     }, []);
+
+    // const loadNews = async () => {
+    //     try {
+    //         const {data} = await axios.get()
+    //     } catch (err) {
+    //         console.log(err)
+    //     }
+    // }
 
     return (
         <article className="page news">
@@ -17,7 +28,11 @@ function News({ ascend }) {
                     informed and inspired.
                 </motion.p>
             </div>
-            <div className="news_container">News Cards come here</div>
+            <div className="news_container">
+                <NewsCard />
+                <NewsCard />
+                <NewsCard />
+            </div>
         </article>
     );
 }

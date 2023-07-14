@@ -473,6 +473,87 @@ main {
     }
 }
 
+.news {
+    &_title {
+        margin-top: -100px;
+        margin-bottom: 60px;
+        text-align: center;
+
+        h1 {
+            font-size: $mobile-font-xlarge;
+            color: $color-orange;
+            font-family: $main-font;
+        }
+        p {
+            color: $color-gray;
+            font-size: $mobile-font-small;
+            max-width: 600px;
+            padding: 0 15px 0 15px;
+            margin: auto;
+        }
+    }
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 90vw;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+        img {
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        h3 {
+            color: $color-navy;
+            font-size: $mobile-font-medium;
+            font-weight: 600;
+            margin: 30px 15px 30px 15px;
+        }
+
+        p {
+            color: $color-gray;
+            margin: 0 15px 30px 15px;
+            text-align: start;
+        }
+
+        h5 {
+            margin: 0 15px 15px 15px;
+            color: $color-gray;
+            font-weight: 400;
+        }
+        button {
+            text-align: start;
+            margin: 0 15px 15px 15px;
+            color: $color-navy;
+            font-weight: 600;
+            font-size: $mobile-font-small;
+            transition-duration: 0.5s;
+
+            &:hover {
+                transform: translateX(20px);
+                color: $color-orange;
+            }
+        }
+    }
+}
+
 .contactUs {
     display: flex;
     justify-content: center;
@@ -490,7 +571,6 @@ main {
             font-family: $main-font;
             text-align: center;
             max-width: 500px;
-            margin: auto;
             padding-bottom: 60px;
         }
 
@@ -804,6 +884,45 @@ main {
         }
     }
 
+    .news {
+        &_title {
+            h1 {
+                font-size: $tablet-font-xlarge;
+            }
+            p {
+                font-size: $tablet-font-small;
+            }
+        }
+
+        .card {
+            flex-direction: row;
+            align-items: space-between;
+            max-width: 1000px;
+            height: 250px;
+
+            img {
+                width: 70%;
+                height: 100%;
+                border-radius: 10px 0px 0px 10px;
+                object-fit: cover;
+            }
+
+            .text {
+                text-align: left;
+                margin-left: 20px;
+            }
+
+            h3 {
+                font-size: $tablet-font-medium;
+                margin: 15px 15px 30px 15px;
+            }
+
+            button {
+                font-size: $tablet-font-small;
+            }
+        }
+    }
+
     .contactUs {
         &_formSub {
             margin-top: 100px;
@@ -1001,6 +1120,47 @@ main {
                         font-size: $desktop-font-small;
                     }
                 }
+            }
+        }
+    }
+
+    .news {
+        &_title {
+            margin-bottom: 100px;
+            h1 {
+                font-size: $desktop-font-xlarge;
+            }
+            p {
+                font-size: $desktop-font-small;
+                max-width: 800px;
+            }
+        }
+
+        .card {
+            flex-direction: row;
+            align-items: space-between;
+            max-width: 1000px;
+            height: 300px;
+
+            img {
+                width: 50%;
+                height: 100%;
+                border-radius: 10px 0px 0px 10px;
+                object-fit: cover;
+            }
+
+            .text {
+                text-align: left;
+                margin-left: 30px;
+            }
+
+            h3 {
+                font-size: $desktop-font-medium;
+                margin: 15px 15px 30px 15px;
+            }
+
+            button {
+                font-size: $desktop-font-small;
             }
         }
     }

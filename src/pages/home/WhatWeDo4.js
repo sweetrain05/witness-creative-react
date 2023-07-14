@@ -5,7 +5,7 @@ import aboutUsImage4 from "../../assets/img/aboutUsImage4.jpg";
 function WhatWeDo4({ toRight, toLeft }) {
     return (
         <article className="what-we-do_4">
-            <motion.div variants={toRight}>
+            <motion.div variants={toLeft}>
                 <h3>Climate technology business operations</h3>
                 <p>
                     Our unwavering commitment to business development has
@@ -16,7 +16,7 @@ function WhatWeDo4({ toRight, toLeft }) {
                     established industry players.
                 </p>
             </motion.div>
-            <motion.img variants={toLeft} src={aboutUsImage4} alt="eco cube" />
+            <motion.img variants={toRight} src={aboutUsImage4} alt="eco cube" />
         </article>
     );
 }
