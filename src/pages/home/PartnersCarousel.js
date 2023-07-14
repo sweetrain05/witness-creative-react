@@ -50,6 +50,7 @@ export default function PartnersCarousel() {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     initialSlide: 2,
+                    dots: false,
                 },
             },
             {

@@ -7,10 +7,7 @@ import landingImage2 from "../../assets/img/landingImage2.jpg";
 function Intro({ ascend }) {
     return (
         <section className="intro">
-            <motion.p
-                variants={ascend}
-                className="intro_statement animate fadeIn-ascend"
-            >
+            <motion.p variants={ascend} className="intro_statement">
                 We connect great minds so that dreams become reality.
             </motion.p>
 
@@ -22,13 +19,11 @@ function Intro({ ascend }) {
             <div className="intro_img_container">
                 <motion.img
                     variants={ascend}
-                    className="animate fadeIn-ascend-s1"
                     src={landingImage1}
                     alt="meeting"
                 />
                 <motion.img
                     variants={ascend}
-                    className="animate fadeIn-ascend-s1"
                     src={landingImage2}
                     alt="office"
                 />

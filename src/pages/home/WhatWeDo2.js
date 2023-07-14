@@ -5,10 +5,7 @@ import aboutUsImage2 from "../../assets/img/aboutUsImage2.jpg";
 function WhatWeDo2({ toRight, toLeft }) {
     return (
         <article className="what-we-do_2">
-            <motion.div
-                variants={toLeft}
-                className="animate fadeIn-appearFromRight"
-            >
+            <motion.div variants={toRight}>
                 <h3>Capital raising advisory consulting</h3>
                 <p>
                     The symbiotic relationship between capital raising and
@@ -22,8 +19,7 @@ function WhatWeDo2({ toRight, toLeft }) {
                 </p>
             </motion.div>
             <motion.img
-                variants={toRight}
-                className="animate fadeIn-appearFromLeft"
+                variants={toLeft}
                 src={aboutUsImage2}
                 alt="active discussion"
             />

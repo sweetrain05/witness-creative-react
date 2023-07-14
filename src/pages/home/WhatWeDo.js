@@ -6,7 +6,7 @@ import WhatWeDo4 from "../home/WhatWeDo4";
 export default function WhatWeDo() {
     return (
         <section className="what-we-do">
-            <p className="what-we-do_title animate fadeIn-ascend">what we do</p>
+            <p className="what-we-do_title">what we do</p>
             <div className="what-we-do_articles">
                 <WhatWeDo1 />
                 <WhatWeDo2 />

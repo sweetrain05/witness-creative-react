@@ -8,10 +8,7 @@ function Connect({ ascend }) {
         <section className="connect">
             <NavLink className="nav-link" aria-current="page" to="/contact">
                 <div className="connect_circle">
-                    <motion.p
-                        variants={ascend}
-                        className="goToContact animate fadeIn-ascend"
-                    >
+                    <motion.p variants={ascend}>
                         <span>We</span> can help, let's connect.
                     </motion.p>
                     <svg

@@ -5,10 +5,7 @@ import aboutUsImage1 from "../../assets/img/aboutUsImage1.jpg";
 function WhatWeDo1({ toRight, toLeft }) {
     return (
         <article className="what-we-do_1">
-            <motion.div
-                variants={toRight}
-                className="animate fadeIn-appearFromLeft"
-            >
+            <motion.div variants={toRight}>
                 <h3>Business development for startups</h3>
                 <p>
                     We have diligently pioneered the establishment of inaugural
@@ -23,7 +20,6 @@ function WhatWeDo1({ toRight, toLeft }) {
             </motion.div>
             <motion.img
                 variants={toLeft}
-                className="animate fadeIn-appearFromRight"
                 src={aboutUsImage1}
                 alt="ascending stairs"
             />

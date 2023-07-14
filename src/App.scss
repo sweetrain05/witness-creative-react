@@ -10,7 +10,7 @@ $background-color-gray: #f8f8f8;
 $mobile-font-small: 16px;
 $mobile-font-medium: 20px;
 $mobile-font-large: 24px;
-$mobile-font-xlarge: 50px;
+$mobile-font-xlarge: 45px;
 $tablet-font-small: 16px;
 $tablet-font-medium: 24px;
 $tablet-font-large: 50px;
@@ -182,7 +182,7 @@ body.hide-scrollbar::-webkit-scrollbar-thumb {
 
                 .menu_btn_close {
                     color: $color-navy;
-                    font-size: $mobile-font-xlarge;
+                    font-size: 50px;
                     padding: 10px;
                     margin-left: 80vw;
                     transition: transform 0.3s ease-in-out;
@@ -256,68 +256,70 @@ main {
     align-items: center;
     width: 100%;
 
-    .intro {
-        align-items: flex-start;
+    div {
+        .intro {
+            align-items: flex-start;
 
-        &_statement {
-            font-family: $main-font;
-            color: $color-orange;
-            font-size: $mobile-font-xlarge;
-            margin: 60px 0 60px 25px;
-            max-width: 500px;
-        }
-
-        &_btn_contact {
-            text-transform: uppercase;
-            font-size: $mobile-font-small;
-            color: $color-navy;
-            margin: 0 0 60px 25px;
-            width: 145px;
-            transition: transform 0.3s ease;
-
-            &:hover {
-                transform: translateX(10px);
-            }
-        }
-
-        &_img_container {
-            display: flex;
-            flex-direction: column;
-
-            position: relative;
-            margin: 0 25px 0 25px;
-
-            img {
-                border-radius: 10px;
-            }
-
-            img:nth-child(1) {
-                width: 50vw;
-                max-width: 300px;
-                height: auto;
-                z-index: 1;
-            }
-
-            img:nth-child(2) {
-                width: 60vw;
+            &_statement {
+                font-family: $main-font;
+                color: $color-orange;
+                font-size: $mobile-font-xlarge;
+                margin: 60px 100px 60px 25px;
                 max-width: 500px;
-                height: auto;
-                z-index: 0;
-                position: absolute;
-
-                margin-top: 200px;
-                margin-left: 35%;
             }
 
-            svg {
-                width: 20vw;
-                min-width: 100px;
-                max-width: 200px;
-                height: auto;
-                z-index: 2;
-                position: absolute;
-                margin-top: 120px;
-                margin-left: 53%;
+            &_btn_contact {
+                text-transform: uppercase;
+                font-size: $mobile-font-small;
+                color: $color-navy;
+                margin: 0 0 60px 25px;
+                width: 145px;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: translateX(10px);
+                }
+            }
+
+            &_img_container {
+                display: flex;
+                flex-direction: column;
+
+                position: relative;
+                margin: 0 25px 0 25px;
+
+                img {
+                    border-radius: 10px;
+                }
+
+                img:nth-child(1) {
+                    width: 50vw;
+                    max-width: 300px;
+                    height: auto;
+                    z-index: 1;
+                }
+
+                img:nth-child(2) {
+                    width: 60vw;
+                    max-width: 500px;
+                    height: auto;
+                    z-index: 0;
+                    position: absolute;
+
+                    margin-top: 200px;
+                    margin-left: 35%;
+                }
+
+                svg {
+                    width: 20vw;
+                    min-width: 100px;
+                    max-width: 200px;
+                    height: auto;
+                    z-index: 2;
+                    position: absolute;
+                    margin-top: 120px;
+                    margin-left: 53%;
+                }
             }
         }
     }
@@ -352,12 +354,14 @@ main {
                 font-size: $mobile-font-medium;
                 font-weight: 600;
                 margin: 50px 0 30px 0;
+                max-width: 500px;
             }
 
             p {
                 color: $color-gray;
                 font-size: $mobile-font-small;
                 margin-bottom: 30px;
+                max-width: 500px;
             }
 
             img {
@@ -626,38 +630,41 @@ main {
     .home {
         margin-left: 25px;
 
-        .intro {
-            &_statement {
-                font-size: $tablet-font-xlarge;
-                margin: 60px 0 60px 0;
-                max-width: 650px;
-            }
+        div {
+            .intro {
+                &_statement {
+                    font-size: $tablet-font-xlarge;
+                    margin: 60px 220px 60px 0;
 
-            &_btn_contact {
-                font-size: $tablet-font-small;
-                padding-top: 10px;
-                width: 130px;
-                margin-left: 0;
-            }
-
-            &_img_container {
-                margin: 0;
-
-                img:nth-child(1) {
-                    width: 60%;
-                    max-width: 400px;
+                    max-width: 650px;
                 }
 
-                img:nth-child(2) {
-                    max-width: 600px;
-                    margin-top: 370px;
-                    margin-left: 35%;
+                &_btn_contact {
+                    font-size: $tablet-font-small;
+                    padding-top: 10px;
+                    width: 130px;
+                    margin-left: 0;
                 }
 
-                svg {
-                    max-width: 330px;
-                    margin-top: 280px;
-                    margin-left: 43%;
+                &_img_container {
+                    margin: 0;
+
+                    img:nth-child(1) {
+                        width: 60%;
+                        max-width: 400px;
+                    }
+
+                    img:nth-child(2) {
+                        max-width: 600px;
+                        margin-top: 370px;
+                        margin-left: 35%;
+                    }
+
+                    svg {
+                        max-width: 330px;
+                        margin-top: 280px;
+                        margin-left: 43%;
+                    }
                 }
             }
         }
@@ -679,22 +686,22 @@ main {
                     height: 450px;
                 }
 
-                article:nth-child(1),
-                article:nth-child(3) {
+                .what-we-do_1,
+                .what-we-do_3 {
                     text-align: left;
                     padding-right: 48vw;
 
                     img {
                         width: 45vw;
-                        margin-left: 45vw;
+                        margin-left: 48vw;
                         position: absolute;
                     }
                 }
 
-                article:nth-child(2),
-                article:nth-child(4) {
+                .what-we-do_2,
+                .what-we-do_4 {
                     text-align: right;
-                    padding-left: 400px;
+                    padding-left: 48vw;
 
                     img {
                         width: 45vw;
@@ -702,6 +709,30 @@ main {
                         position: absolute;
                     }
                 }
+
+                // article:nth-child(1),
+                // article:nth-child(3) {
+                //     text-align: left;
+                //     padding-right: 48vw;
+
+                //     img {
+                //         width: 45vw;
+                //         margin-left: 45vw;
+                //         position: absolute;
+                //     }
+                // }
+
+                // article:nth-child(2),
+                // article:nth-child(4) {
+                //     text-align: right;
+                //     padding-left: 400px;
+
+                //     img {
+                //         width: 45vw;
+                //         margin-left: -48vw;
+                //         position: absolute;
+                //     }
+                // }
 
                 h3 {
                     font-size: $tablet-font-medium;
@@ -823,40 +854,42 @@ main {
     }
 
     .home {
-        .intro {
-            &_statement {
-                font-size: $desktop-font-xlarge;
-                margin: 60px 0 60px 0;
-                max-width: 800px;
-            }
-
-            &_btn_contact {
-                font-size: $desktop-font-small;
-                border: 1px solid $color-navy;
-                border-radius: 10px;
-                padding: 10px 25px;
-                width: 200px;
-                margin-left: 0;
-            }
-
-            &_img_container {
-                margin: 0;
-
-                img:nth-child(1) {
-                    width: 40%;
+        div {
+            .intro {
+                &_statement {
+                    font-size: $desktop-font-xlarge;
+                    margin: 60px 220px 60px 0;
                     max-width: 800px;
                 }
 
-                img:nth-child(2) {
-                    max-width: 600px;
-                    margin-top: 350px;
-                    margin-left: 41%;
+                &_btn_contact {
+                    font-size: $desktop-font-small;
+                    border: 1px solid $color-navy;
+                    border-radius: 10px;
+                    padding: 10px 25px;
+                    width: 200px;
+                    margin-left: 0;
                 }
 
-                svg {
-                    max-width: 280px;
-                    margin-top: 150px;
-                    margin-left: 46%;
+                &_img_container {
+                    margin: 0;
+
+                    img:nth-child(1) {
+                        width: 40%;
+                        max-width: 800px;
+                    }
+
+                    img:nth-child(2) {
+                        max-width: 600px;
+                        margin-top: 350px;
+                        margin-left: 41%;
+                    }
+
+                    svg {
+                        max-width: 280px;
+                        margin-top: 150px;
+                        margin-left: 46%;
+                    }
                 }
             }
         }
@@ -878,20 +911,20 @@ main {
                     height: 500px;
                 }
 
-                article:nth-child(1),
-                article:nth-child(3) {
+                .what-we-do_1,
+                .what-we-do_3 {
                     text-align: left;
                     padding-right: 50%;
 
                     img {
                         width: 45%;
-                        margin-left: 60%;
+                        margin-left: 61%;
                         position: absolute;
                     }
                 }
 
-                article:nth-child(2),
-                article:nth-child(4) {
+                .what-we-do_2,
+                .what-we-do_4 {
                     text-align: right;
                     padding-left: 50%;
 

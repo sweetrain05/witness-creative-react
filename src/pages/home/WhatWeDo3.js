@@ -5,10 +5,7 @@ import aboutUsImage3 from "../../assets/img/aboutUsImage3.jpg";
 function WhatWeDo3({ toRight, toLeft }) {
     return (
         <article className="what-we-do_3">
-            <motion.div
-                variants={toRight}
-                className="animate fadeIn-appearFromLeft"
-            >
+            <motion.div variants={toRight}>
                 <h3>
                     Commercializing the innovation: Biotech-based cosmetics
                     ingredients
@@ -27,7 +24,6 @@ function WhatWeDo3({ toRight, toLeft }) {
             </motion.div>
             <motion.img
                 variants={toLeft}
-                className="animate fadeIn-appearFromRight"
                 src={aboutUsImage3}
                 alt="biology lab"
             />

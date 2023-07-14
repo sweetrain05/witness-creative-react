@@ -29,7 +29,7 @@ function Contact({ ascend }) {
     return (
         <article className="page contactUs">
             <div className="contactUs_formSub">
-                <motion.p variants={ascend} className="animate">
+                <motion.p variants={ascend}>
                     Tell us about your mission, and we'll get back to you right
                     away!
                 </motion.p>

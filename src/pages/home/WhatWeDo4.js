@@ -5,10 +5,7 @@ import aboutUsImage4 from "../../assets/img/aboutUsImage4.jpg";
 function WhatWeDo4({ toRight, toLeft }) {
     return (
         <article className="what-we-do_4">
-            <motion.div
-                variants={toLeft}
-                className="animate fadeIn-appearFromRight"
-            >
+            <motion.div variants={toRight}>
                 <h3>Climate technology business operations</h3>
                 <p>
                     Our unwavering commitment to business development has
@@ -19,12 +16,7 @@ function WhatWeDo4({ toRight, toLeft }) {
                     established industry players.
                 </p>
             </motion.div>
-            <motion.img
-                variants={toRight}
-                className="animate fadeIn-appearFromLeft"
-                src={aboutUsImage4}
-                alt="eco cube"
-            />
+            <motion.img variants={toLeft} src={aboutUsImage4} alt="eco cube" />
         </article>
     );
 }
