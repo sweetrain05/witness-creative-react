@@ -1,4 +1,4 @@
-import ExternalLinks from "./ExternalLinks";
+import ExternalLinks from "../ExternalLinks";
 
 export default function Footer() {
     return (

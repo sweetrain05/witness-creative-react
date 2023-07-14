@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom";
-import "../App.scss";
-import companyLogo from "../assets/svg/witnessLogo.svg";
-import menuBar from "../assets/svg/menubar.svg";
+import "../../App.scss";
+import companyLogo from "../../assets/svg/witnessLogo.svg";
+import menuBar from "../../assets/svg/menubar.svg";
 import { useState, useEffect } from "react";
-import MenuList from "./MenuList";
-
+import MenuList from "../MenuList";
 import MenuOverlay from "./MenuOverlay";
 
 export default function Header() {
@@ -31,7 +30,6 @@ export default function Header() {
 
     const handleMenuClick = () => {
         setMenuToggle(!menuToggle);
-        console.log(menuToggle);
     };
 
     return (

@@ -1,7 +1,9 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { useEffect } from "react";
+import { motion } from "framer-motion";
+import motionWrapper from "../wrapper/motionWrapper";
 
-export default function Contact() {
+function Contact({ ascend }) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -27,11 +29,11 @@ export default function Contact() {
     return (
         <article className="page contactUs">
             <div className="contactUs_formSub">
-                <p className="animate">
+                <motion.p variants={ascend} className="animate">
                     Tell us about your mission, and we'll get back to you right
                     away!
-                </p>
-                <div className="form_input_container">
+                </motion.p>
+                <motion.div variants={ascend} className="form_input_container">
                     <form onSubmit={handleSubmit}>
                         <li>
                             <input
@@ -82,8 +84,10 @@ export default function Contact() {
                             </button>
                         </li>
                     </form>
-                </div>
+                </motion.div>
             </div>
         </article>
     );
 }
+
+export default motionWrapper(Contact);

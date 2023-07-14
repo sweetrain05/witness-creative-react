@@ -1,5 +1,5 @@
-import ExternalLinks from "./ExternalLinks";
-import MenuList from "./MenuList";
+import ExternalLinks from "../ExternalLinks";
+import MenuList from "../MenuList";
 
 export default function MenuOverlay({ handleMenuClick }) {
     return (

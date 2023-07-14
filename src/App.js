@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/ui/Header";
+import Footer from "./components/ui/Footer";
 
 const PageNotFound = () => {
     return (
