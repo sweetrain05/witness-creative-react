@@ -4,15 +4,15 @@ export default function ExternalLinks() {
     const links = [
         {
             name: "facebook",
-            url: "https://www.facebook.com/witnesspartners.us",
+            url: "https://www.facebook.com/",
         },
         {
             name: "instagram",
-            url: "https://www.instagram.com/witness_creative/",
+            url: "https://www.instagram.com/",
         },
         {
             name: "linkedin",
-            url: "https://www.linkedin.com/company/witness-creative-partners-inc/",
+            url: "https://www.linkedin.com/in/danbi-choi/",
         },
     ];
 

@@ -6,7 +6,7 @@ export default function SubscriptionForm() {
                 {/* Begin Mailchimp Signup Form */}
                 <div id="mc_embed_signup">
                     <form
-                        action="https://witnesspartners.us14.list-manage.com/subscribe/post?u=d9a81e0e0ec9f0ea34b780173&id=c29869701a&f_id=006d81e0f0"
+                        action="https://hotmail.us14.list-manage.com/subscribe/post?u=8a7c601ca8ace33d2cc5d03cb&amp;id=fa6c233fa2&amp;f_id=00b6ffe0f0"
                         method="post"
                         id="mc-embedded-subscribe-form"
                         name="mc-embedded-subscribe-form"
@@ -56,7 +56,7 @@ export default function SubscriptionForm() {
                             >
                                 <input
                                     type="text"
-                                    name="b_d9a81e0e0ec9f0ea34b780173_c29869701a"
+                                    name="b_8a7c601ca8ace33d2cc5d03cb_fa6c233fa2"
                                     tabIndex={-1}
                                     defaultValue
                                 />

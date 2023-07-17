@@ -2,6 +2,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import motionWrapper from "../wrapper/motionWrapper";
+import { Link } from "react-router-dom";
 
 function Contact({ ascend }) {
     useEffect(() => {
@@ -9,10 +10,10 @@ function Contact({ ascend }) {
     }, []);
 
     // Formspree Integration
-    const [state, handleSubmit] = useForm("mjvdqojb");
+    const [state, handleSubmit] = useForm("mdorkoqr");
     if (state.succeeded) {
         return (
-            <p
+            <div
                 style={{
                     marginTop: "200px",
                     marginBottom: "200px",
@@ -20,9 +21,14 @@ function Contact({ ascend }) {
                     fontSize: "20px",
                 }}
             >
-                Thanks for your submission. <br />
-                We will get back to you shortly!
-            </p>
+                <p>
+                    Thanks for your submission. <br />
+                    We will get back to you shortly!
+                </p>
+                <Link to={"/"}>
+                    <button className="goBackBtn">Go back ⇀</button>
+                </Link>
+            </div>
         );
     }
 
