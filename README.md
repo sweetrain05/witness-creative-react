@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+☀️ **Webpage Link :** <a href="https://react-webiste-witness-creative-jkp6x6p4n-sweetrain05.vercel.app/" target="_blank">Click here!</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
 
-## Available Scripts
+📒 **About this webpage :**
 
-In the project directory, you can run:
+- Technology used: HTML, Sass, React JS
+- Mobile First Responsive website
+- Implemented HTTP requests using RapidAPI to retrieve user articles from their Medium blog.
+- Web hosting: Vercel ( & google domain connection)
 
-### `npm start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🥇 **Single person project from design to deployment :**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Client Collaboration for Project Definition:** Engaged in thorough discussions with clients to understand their precise requirements, as many clients may have uncertain expectations.
+2. **Designing from Scratch with Figma:** Created a webpage from the ground up, given only client's desired concept. Took full responsibility for the design process, creating visual representations and presenting the ideas using Figma.
+3. **Continuous Client Communication for Alignment:** Prior to commencing website development, maintained open lines of communication with the client to ensure our final output aligned with their expectations, reducing the possibility of rework.
+4. **Project Implementation with HTML, SCSS, and React JS:** Developed the project by leveraging HTML, SCSS, and React JS once the design was finalized.
+5. **Finalizing the Project with Testing and Client Approval:** Concluded the design phase by conducting rigorous testing to ensure seamless functionality. Presented the final product to the client, obtaining their confirmation and approval.
+6. **Deployment:** Deployed the webpage and established a connection between the server and a Google domain for seamless accessibility.
 
-### `npm test`
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ **Third Party Service & Libraries used :**
 
-### `npm run build`
+- **Email subscription :** Mailchimp ([mailchimp.com](http://mailchimp.com/))
+- **Form input :** Formspree ([formspree.com](http://formspree.com/))
+- **Carousel effect :** React Slick([react-slick.neostack.com/](http://react-slick.neostack.com/))
+- **Animation :** Framer Motion([framer.com/motion/](http://framer.com/motion/))
+- **Others:** Axios, Moment, React Icons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⬇️ **Page 1 : Landing Page Highlights** ⬇️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Developed a carousel using React Slick that links to partner websites.
+- Integrated email subscription functionality by embedding MailChimp, allowing users to subscribe.
 
-### `npm run eject`
+<br />
+  
+![website-1](https://github.com/sweetrain05/witness-creative-react/assets/86023470/13462cc7-a1a4-499a-a3e2-176f6c150c4d)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br />
+<br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+⬇️ **Page 2 : News Page Highlights** ⬇️
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Developed a dynamic HTTP request to Rapid API, enabling the retrieval of user articles from their Medium blog.
+- Implemented a 'Load More' button feature to ensure prompt response and enhance user experience.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br />
 
-## Learn More
+![website-2](https://github.com/sweetrain05/witness-creative-react/assets/86023470/2d92a01f-8c76-4380-874f-c503532101ab)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br />
+<br />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+⬇️ **Page 3 : Contact Page Highlights** ⬇️
 
-### Code Splitting
+- Implemented visitor form submission functionality by embedding Formspree, enabling immediate email delivery of the submitted form to the website owner.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br />
 
-### Analyzing the Bundle Size
+![website-3](https://github.com/sweetrain05/witness-creative-react/assets/86023470/5d0ae5dd-edc4-4e0e-a4b9-d7aa782b8732)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
