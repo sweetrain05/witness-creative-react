@@ -25,7 +25,7 @@
 🛠️ **Third Party Service & Libraries used :**
 
 - **Email subscription :** Mailchimp ([mailchimp.com](http://mailchimp.com/))
-- **Form input :** Formspree ([formspree.com](http://formspree.com/))
+- **Contact form auto delivery :** Formspree ([formspree.com](http://formspree.com/))
 - **Carousel effect :** React Slick([react-slick.neostack.com/](http://react-slick.neostack.com/))
 - **Animation :** Framer Motion([framer.com/motion/](http://framer.com/motion/))
 - **Others:** Axios, Moment, React Icons
